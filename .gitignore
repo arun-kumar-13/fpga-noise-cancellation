@@ -1,0 +1,23 @@
+# Quartus build products (keep output_files/*.sof)
+hardware/db/
+hardware/incremental_db/
+hardware/qdb/
+hardware/greybox_tmp/
+hardware/output_files/*
+!hardware/output_files/*.sof
+hardware/*.qws
+hardware/*.bak
+# Platform Designer generated HDL folder (regenerate from the .qsys);
+# replace <system> with your .qsys name
+hardware/<system>/
+hardware/.qsys_edit/
+
+# Nios II software build products
+software/bsp/
+software/app/obj/
+software/app/*.map
+software/app/*.objdump
+software/app/mem_init/
+software/**/.metadata/
+# keep the pre-built program
+!software/app/dsp_core.elf
